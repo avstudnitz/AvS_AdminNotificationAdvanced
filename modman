@@ -1,0 +1,5 @@
+src/app/code/community/AvS/AdminNotificationAdvanced    app/code/community/AvS/AdminNotificationAdvanced
+src/app/etc/modules/*                                   app/etc/modules/
+src/app/design/adminhtml/default/default/layout/*       app/design/adminhtml/default/default/layout
+src/app/design/adminhtml/default/default/template/notification_advanced     app/design/adminhtml/default/default/template/notification_advanced
+src/app/locale/de_DE/*                                  app/locale/de_DE

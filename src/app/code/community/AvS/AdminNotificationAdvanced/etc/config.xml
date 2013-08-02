@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for improving Magento Admin Notifications
+ *
+ * @category   AvS
+ * @package    AvS_AdminNotificationAdvanced
+ * @license    http://opensource.org/licenses/osl-3.0.php Open Software Licence 3.0 (OSL-3.0)
+ * @author     Andreas von Studnitz <avs@avs-webentwicklung.de>
+ */
+-->
+<config>
+	<modules>
+		<AvS_AdminNotificationAdvanced>
+			<version>0.1.0</version>
+		</AvS_AdminNotificationAdvanced>
+	</modules>
+
+    <global>
+        <blocks>
+            <adminnotificationadvanced>
+                <class>AvS_AdminNotificationAdvanced_Block</class>
+            </adminnotificationadvanced>
+        </blocks>
+        <helpers>
+            <adminnotificationadvanced>
+                <class>AvS_AdminNotificationAdvanced_Helper</class>
+            </adminnotificationadvanced>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <AvS_AdminNotificationAdvanced before="Mage_Adminhtml">AvS_AdminNotificationAdvanced</AvS_AdminNotificationAdvanced>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <AvS_AdminNotificationAdvanced>
+                    <files>
+                        <default>AvS_AdminNotificationAdvanced.csv</default>
+                    </files>
+                </AvS_AdminNotificationAdvanced>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <adminnotification_advanced>
+                    <file>adminnotification_advanced.xml</file>
+                </adminnotification_advanced>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
