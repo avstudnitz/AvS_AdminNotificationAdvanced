@@ -1,5 +1,5 @@
 {
-   "name": "avstudnitz/AvS_AdminNotificationAdvanced",
+   "name": "avstudnitz/admin-notification-advanced",
    "type": "magento-module",
    "description": "Adds options to mark all messages unread or remove all messages from admin notification popup and toolbar.",
    "homepage": "https://github.com/avstudnitz/AvS_AdminNotificationAdvanced",
