@@ -47,4 +47,12 @@ class AvS_AdminNotificationAdvanced_NotificationadvancedController extends Mage_
 
         $this->_redirectReferer();
     }
+
+    /**
+     * @return bool
+     */
+    public function _isAllowed()
+    {
+        return true;
+    }
 }
